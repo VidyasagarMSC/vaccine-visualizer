@@ -2,6 +2,8 @@
 
 :construction: Work in progress
 
+> Inspirated by Streamlit DataFrame demo
+
 Data source: [covid19india/api](https://github.com/covid19india/api)
 
 ### Tools
