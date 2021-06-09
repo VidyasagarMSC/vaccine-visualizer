@@ -18,3 +18,18 @@ Data source: [covid19india/api](https://github.com/covid19india/api)
 ```sh
 streamlit run covid_plot_statewise.py
 ```
+
+### Data profiling
+
+If you :heart: to see the data
+
+```sh
+pip install pandas-profiling
+```
+
+and then 
+
+```sh
+jupyter notebook
+```
+--> Open `covid_plot.ipynb`
