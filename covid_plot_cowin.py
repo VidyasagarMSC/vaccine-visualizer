@@ -30,7 +30,7 @@ try:
     else:
         data =  df_formatted.loc[states]
         #data /= 1000.0
-        st.write("### Vaccines in (~K)", data.sort_index())
+        st.write("### Vaccinations", data.sort_index())
         data = data.T.reset_index()
         data = pd.melt(data, id_vars=["Updated On"]).rename(
             columns={"Updated On": "date", "value": "Total Individuals Vaccinated"}

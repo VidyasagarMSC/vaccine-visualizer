@@ -26,7 +26,7 @@ try:
     else:
         data = df.loc[states]
         #data /= 1000.0
-        st.write("### Vaccines in Crores", data.sort_index())
+        st.write("### Vaccinations", data.sort_index())
         data = data.T.reset_index()
         data = pd.melt(data, id_vars=["date"]).rename(
             columns={"date": "date", "value": "Total Individuals Vaccinated"}
