@@ -7,6 +7,10 @@ from urllib.error import URLError
 
 @st.cache
 def get_vaccination_data():
+    """
+    Data from Covid19India.org
+
+    """
     COVID_INDIA_URL = "https://api.covid19india.org/csv/latest/vaccine_doses_statewise.csv"
     df = pd.read_csv(COVID_INDIA_URL)
     df.columns.name = "date"
@@ -25,7 +29,6 @@ try:
         st.error("Please select at least one state.")
     else:
         data = df.loc[states]
-        #data /= 1000.0
         st.write("### Vaccinations", data.sort_index())
         data = data.T.reset_index()
         data = pd.melt(data, id_vars=["date"]).rename(

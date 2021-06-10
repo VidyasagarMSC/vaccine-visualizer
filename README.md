@@ -21,17 +21,6 @@ Data source: [covid19india/api](https://github.com/covid19india/api)
 streamlit run covid_plot_statewise.py
 ```
 
-### Data profiling
+### Jupyter notebook
 
-If you :heart: to see the data
-
-```sh
-pip install pandas-profiling
-```
-
-and then 
-
-```sh
-jupyter notebook
-```
---> Open `covid_plot.ipynb`
+> For Jupyter notebook version, refer [Kaggle](https://www.kaggle.com/aficionadovmac/covid19-vaccinations-in)
